@@ -1,30 +1,52 @@
-# 
-
 ## 📌 Overview
 
----
+This repository contains experimental implementations for the paper:
 
-## 📄 Related Research
-
-These modifications are partially based on ideas explored in the following research work:
-
-**Title:** *Understanding Students Through Dialogue: A Dialogue Knowledge Tracing System for Learning Analytics*
-Accepted at **[ProActLLM](https://proactllm.github.io/#accepted-papers)**
+**"Understanding Students Through Dialogue: A Dialogue Knowledge Tracing System for Learning Analytics"**
+Accepted at [ProActLLM](https://proactllm.github.io/#accepted-papers)
 
 A related thesis version is available here:
 👉 https://etd.lib.ncu.edu.tw/detail/2ed71350cc8bca40569b03ad801126fa/
 
 *Note: The thesis version may differ from the accepted conference version.*
 
-The final paper is currently not publicly available.
-A preprint (e.g., arXiv) will be released in the future.
+The experiments focus on integrating retrieval-augmented generation (RAG), knowledge graph construction, and dialogue-based knowledge tracing for modeling student learning.
 
 ---
 
-## 🚀 Getting Started
+## 🧪 Experiments
 
-### Prerequisite
+The main experimental workflow is provided in:
 
-We need LightRAG server to handle course data. Please set up the server according to the instructions in this repository.
+notebooks/experiment.ipynb
+
+This notebook demonstrates the end-to-end experimental pipeline.
+
+Core functionalities are implemented in:
+
+src/main.py
+
+---
+
+## ⚠️ Notes on Reproducibility
+
+This repository focuses on experimental workflows and is **not fully self-contained**.
+
+* The complete environment and datasets used in the paper are not publicly available.
+* Some components depend on external services and private data.
+
+To run the system, a LightRAG server is required to handle course data:
+
 👉 https://github.com/BlackWaterGua/ConversaionKT
 
+Please follow the setup instructions in that repository before running the experiments.
+
+This repository mainly provides the experimental pipeline and core logic for reference.
+
+---
+
+## 🙏 Acknowledgement
+
+This project is based on the original LightRAG repository:
+
+👉 https://github.com/HKUDS/LightRAG
